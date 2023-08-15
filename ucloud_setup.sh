@@ -16,11 +16,11 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/lates
 tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 
-if [ ! -d "data" ]; then
+if [ ! -d "input" ]; then
     wget https://people.compute.dtu.dk/rapa/cats/MissingDataOpenData.zip
     sudo apt-get install unzip
     unzip MissingDataOpenData
-    mv MissingDataOpenData data
+    mv MissingDataOpenData input
     rm -rf MissingDataOpenData.zip
 fi
 

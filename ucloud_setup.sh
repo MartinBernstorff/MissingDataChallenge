@@ -24,7 +24,5 @@ if [ ! -d "data" ]; then
     rm -rf MissingDataOpenData.zip
 fi
 
-git clone https://github.com/MartinBernstorff/MissingDataChallenge code
-
 git config --global user.email "ryqiem@gmail"
 git config --global user.name "Martin Bernstorff"
